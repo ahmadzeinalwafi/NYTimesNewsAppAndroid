@@ -59,4 +59,10 @@ dependencies {
     // Navigation
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+
+    //    Test
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:4.5.1")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 }

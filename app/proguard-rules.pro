@@ -20,13 +20,19 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-# Retrofit
+# Keep Core Module Classes
+-keep class com.example.newsapp.core.di.** { *; }
+-keep class com.example.newsapp.core.domain.** { *; }
+-keep class com.example.newsapp.core.data.** { *; }
+-keep class com.example.newsapp.core.utils.** { *; }
+-keep class com.example.newsapp.core.ui.** { *; }
+-keep class com.example.newsapp.core.data.source.local.entity.** { *; }
+-keep class com.example.newsapp.core.data.source.local.room.** { *; }
+-keep class com.example.newsapp.core.data.source.remote.network.** { *; }
 -keep class com.example.newsapp.core.data.source.remote.response.** { *; }
--keepattributes Signature
--keepattributes *Annotation*
 
-# Room
--keep class androidx.room.IMultiInstanceInvalidationService { *; }
-
-# Hilt/Dagger
+# Hilt & Dagger
 -keep class dagger.hilt.** { *; }
+-keep class javax.inject.** { *; }
+-keep class net.sqlcipher.** { *; }
+-keep class net.sqlcipher.database.** { *; }

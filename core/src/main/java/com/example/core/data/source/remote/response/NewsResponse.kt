@@ -1,7 +1,9 @@
 package com.example.newsapp.core.data.source.remote.response
 
 import com.google.gson.annotations.SerializedName
+import androidx.annotation.Keep
 
+@Keep
 data class NewsResponse(
     @SerializedName("status")
     val status: String,
@@ -10,6 +12,7 @@ data class NewsResponse(
     val results: List<NewsItemResponse>
 )
 
+@Keep
 data class NewsItemResponse(
     @SerializedName("title")
     val title: String? = null,
@@ -30,6 +33,7 @@ data class NewsItemResponse(
     val multimedia: List<MultimediaResponse>? = null
 )
 
+@Keep
 data class MultimediaResponse(
     @SerializedName("url")
     val url: String? = null

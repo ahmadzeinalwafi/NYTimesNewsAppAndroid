@@ -19,3 +19,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.example.newsapp.favorite.ui.** { *; }
+-keep class com.example.newsapp.favorite.FavoriteFragment { *; }
+-keep class com.example.newsapp.favorite.di.** { *; }
+-keep class com.example.newsapp.favorite.FavoriteViewModel { *; }
